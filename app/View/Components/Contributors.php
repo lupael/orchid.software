@@ -15,7 +15,7 @@ class Contributors extends Component
     public function render()
     {
         $contributors = Http::withBasicAuth('token', config('services.github.token'))
-            ->get('https://api.github.com/repos/orchidsoftware/platform/contributors', [
+            ->get('https://api.github.com/repos/lupael/orchid.software/contributors', [
                 'per_page' => 70,
             ])
             ->json();
