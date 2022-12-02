@@ -34,7 +34,7 @@ jobs:
           APP_ENV: production
           APP_KEY: base64:8Jv9H6OMWkWui9VzMwjSiLPfMqRnZGN0PNVUmMc5Dyc=
           APP_DEBUG: false
-          APP_URL: https://orchid.ispbills.com
+          APP_URL: http://orchid.ispbills.com
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           php artisan export
